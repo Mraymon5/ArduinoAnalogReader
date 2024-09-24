@@ -19,11 +19,7 @@ with open('data.csv', 'w') as f:
         # Decode the bytes into a string
         try:
             decoded_line = line.decode('utf-8').strip()
-            f.write(decoded_line + f' | Time: {startTime-time.time()}' + '\n')  # Write to the file
-            print(f"Decoded: {decoded_line}")
+            f.write(decoded_line + ' | Time: ' + str(startTime-time.time()) + '\n')  # Write to the file
+            print("Decoded: " + decoded_line)
         except UnicodeDecodeError as e:
-            print(f"Error decoding: {e}")
-
-
-cat= "cows"
-print("I hate " + cat + " and also " + "Trucks")
+            print("Error decoding: " + e)
