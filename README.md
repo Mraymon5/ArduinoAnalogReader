@@ -9,7 +9,7 @@ To grant access to the COM ports, run the following code from the bash terminal:
 ```sudo usermod -aG dialout $USER```
 
 
-This accomplished, flash an Arduino with the `AnalogRecord.ino` program. The easiest way to do this is usually via the Arduino IDE, downloadable here: https://www.arduino.cc/en/software/OldSoftwareReleases
+This accomplished, flash an Arduino with the `AnalogRecord.ino` program. The easiest way to do this is usually via the Arduino IDE, downloadable here: https://www.arduino.cc/en/software/OldSoftwareReleases.
 I recommend version `1/8/13`; after that release, they made some changes to the program that make the serial monitor much less useful. Not critical here, but having a functional serial monitor can be helpful for debugging.
 
 To set up the python program, several lines will have to be edited.
