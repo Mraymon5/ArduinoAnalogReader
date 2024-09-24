@@ -13,7 +13,9 @@ This accomplished, flash an Arduino with the `AnalogRecord.ino` program. The eas
 I recommend version `1/8/13`; after that release, they made some changes to the program that make the serial monitor much less useful. Not critical here, but having a functional serial monitor can be helpful for debugging.
 
 To set up the python program, several lines will have to be edited.
+
 Line 5: `os.chdir('/home/ramartin/Documents/') #Change this to the desired output folder` establishes the path to the desired folder for saving the data. Data will be saved as a CSV.
+
 Line 10: `ser = serial.Serial('/dev/ttyACM1', 9600) #Change this to the port that the Arduino is currently in` establishes the connection with the arduino. 
 
 If you don't know the address of the arduino, you can use the IDE to identify it: `Tools -> Port` should list the ports that currently host an Arduino. Alternatively, on linux, you can open a terminal and run:
